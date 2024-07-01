@@ -1,0 +1,19 @@
+body {
+    padding: 15px;
+}
+
+img {
+    height: 250px;
+
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#boxes {
+    padding-top: 15px;
+}
