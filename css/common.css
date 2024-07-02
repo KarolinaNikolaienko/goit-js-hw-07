@@ -6,7 +6,7 @@ body {
   margin: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -163,7 +163,32 @@ img {
   min-height: 100vh;
 }
 
+#controls {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  background: #f6f6fe;
+  width: fit-content;
+}
+
+#controls>input {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
 #boxes {
-  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 44px;
+  row-gap: 32px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  width: fit-content;
 }
 
