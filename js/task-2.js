@@ -26,12 +26,13 @@ const images = [
 ];
 
 const ulList = document.querySelector("ul.gallery");
+let listItems = "";
 
 images.forEach((image) => {
-    const img = document.createElement("img");
-    img.src = image.url;
-    img.alt = image.alt;
+  const img = document.createElement("img");
+  img.src = image.url;
+  img.alt = image.alt;
 
-    const listItem = `<li>${img.outerHTML}</li>`;
-    ulList.insertAdjacentHTML("beforeend",listItem);
+  listItems += `<li>${img.outerHTML}</li>`;
 });
+ulList.insertAdjacentHTML("beforeend",listItems);

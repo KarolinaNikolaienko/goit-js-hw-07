@@ -6,12 +6,14 @@ function getRandomHexColor() {
 
 function createBoxes(amount) {
     const size = 30;
+    let boxes = "";
     for (let i = 0; i < amount; i++) {
         const div = document.createElement("div");
         div.style.width = div.style.height = size + 10 * i + "px";
         div.style.backgroundColor = getRandomHexColor();
-        boxesDiv.insertAdjacentElement("beforeend", div);
+        boxes += div.outerHTML;
     }
+    boxesDiv.insertAdjacentHTML("beforeend", boxes);
 }
 
 function destroyBoxes() {
